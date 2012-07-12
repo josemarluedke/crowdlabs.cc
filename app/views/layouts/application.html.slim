@@ -1,13 +1,18 @@
 doctype html
 html
   head
-    title Crowdlabs
+    title Crowdlab.cc - We build your crowdfunding startup, in three weeks!
     = stylesheet_link_tag "application"
     meta[charset="utf-8"]
     = yield(:meta_tags)
     = csrf_meta_tag
     = javascript_include_tag "application"
   body
-    header
-    = yield
-    footer
+    .locales
+      = link_to "EN", "/en", class: "#{'selected' if I18n.locale == :en}"
+      |  - 
+      = link_to "PT", "/pt", class: "#{'selected' if I18n.locale == :pt}"
+    .logo
+      h1 Crowdlab.cc - We build your crowdfunding startup, in three weeks!
+    #container
+      = yield

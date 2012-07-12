@@ -1,4 +1,5 @@
 CrowdlabsCc::Application.routes.draw do
+  filter :locale
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
