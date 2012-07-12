@@ -37,6 +37,5 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
-gem "haml", ">= 3.0.0"
 gem "slim"
 gem "slim-rails"

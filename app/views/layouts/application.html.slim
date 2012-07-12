@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title Crowdlabs
+    = stylesheet_link_tag "application"
+    meta[charset="utf-8"]
+    = yield(:meta_tags)
+    = csrf_meta_tag
+    = javascript_include_tag "application"
+  body
+    header
+    = yield
+    footer
