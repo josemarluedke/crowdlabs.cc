@@ -1,9 +1,15 @@
 doctype html
 html
   head
-    title Crowdlab.cc - We build your crowdfunding startup, in three weeks!
+    title "Crowdlab.cc - #{t('title')}"
     = stylesheet_link_tag "application"
     meta[charset="utf-8"]
+    /# Meta tags for facebook social graph
+    meta[property="og:title" content="Crowdlab.cc - #{t('title')}"]
+    meta[property="og:type" content='cause']
+    meta[property="og:url" content=root_url]
+    meta[property="og:image" content=asset_url("crowdlabs-logo-og.jpg")]
+    meta[property="og:site_name" content="Crowdlab.cc"]
     = yield(:meta_tags)
     = csrf_meta_tag
     = javascript_include_tag "application"
